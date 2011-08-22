@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>protected function ${1:method} ($2):${3:void}{
+	trace("`echo ${TM_FILENAME%.as}`::${1:method}");
+	$4
+}</string>
+	<key>name</key>
+	<string>function (profn)</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>profn</string>
+	<key>uuid</key>
+	<string>3880401D-9D6D-451F-AB00-933130D631D3</string>
+</dict>
+</plist>

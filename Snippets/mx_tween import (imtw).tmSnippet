@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>import mx.transitions.Tween;
+import mx.transitions.easing.*;
+/*
+classes: Back, Bounce, Elastic, Regular, Strong, None
+methods: easeIn, easeOut, easeInOut
+*/</string>
+	<key>name</key>
+	<string>mx.tween import (imtw)</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>imtw</string>
+	<key>uuid</key>
+	<string>95F65CEE-3F1A-4F78-820C-76E1294FD347</string>
+</dict>
+</plist>

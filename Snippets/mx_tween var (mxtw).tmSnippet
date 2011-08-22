@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var $1:Object = new Tween($2, "$3", Regular.easeIn, $2.$3, $4, $5, true);
+$1.onMotionFinished = function() {
+    //$1.continueTo(0, 3);
+};</string>
+	<key>name</key>
+	<string>mx.tween var (mxtw)</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>mxtw</string>
+	<key>uuid</key>
+	<string>4D9DBD4E-75D2-4213-8A63-7CE6ACFE7242</string>
+</dict>
+</plist>

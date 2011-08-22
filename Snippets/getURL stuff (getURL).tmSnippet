@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var request:URLRequest = new URLRequest(url);
+//request.data = variables;
+
+try {            
+    navigateToURL(request);
+}
+catch (error:Error) {
+    // handle error here
+}</string>
+	<key>name</key>
+	<string>getURL stuff (getURL)</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>tabTrigger</key>
+	<string>getURL</string>
+	<key>uuid</key>
+	<string>53C16805-4462-4C9C-A589-2C8588D0EF6F</string>
+</dict>
+</plist>

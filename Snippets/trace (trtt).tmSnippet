@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>trace("\t$1 is: "+$1);</string>
+	<key>name</key>
+	<string>trace indent (trtt)</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>trtt</string>
+	<key>uuid</key>
+	<string>5224BC02-0BD0-40F0-A416-E366E9417D3C</string>
+</dict>
+</plist>

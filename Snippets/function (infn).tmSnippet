@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>internal function ${1:method} ($2):${3:void}{
+	trace("`echo ${TM_FILENAME%.as}`::${1:method}");
+	$4
+}</string>
+	<key>name</key>
+	<string>function (infn)</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>infn</string>
+	<key>uuid</key>
+	<string>B0FD2F81-389B-4D96-BB89-9EB28BBF6B0A</string>
+</dict>
+</plist>

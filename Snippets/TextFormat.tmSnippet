@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${1:format}:TextFormat = new TextFormat()
+$1.font = ${2:"Arial"};
+//$1.font = new ${3:RockwellFnt}().fontName;
+$1.size = ${4:10};</string>
+	<key>name</key>
+	<string>TextFormat</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>TextFormat</string>
+	<key>uuid</key>
+	<string>B5B3EA27-FF7E-44C6-BF57-198A30564313</string>
+</dict>
+</plist>

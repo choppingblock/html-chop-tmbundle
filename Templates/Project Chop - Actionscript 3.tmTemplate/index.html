@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>${TM_NEW_FILE_BASENAME}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="The Chopping Block, Inc." />
+	<meta name="geo.country" content="US" />
+	<meta name="dc.language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="screen" charset="utf-8" />
+
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="assets/css/ie_lt8_fixes.css" type="text/css" media="all" charset="utf-8" />
+    <![endif]-->
+	
+	<link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print" charset="utf-8" />
+	
+	<style type="text/css" media="screen">
+		
+		#flashcontent {
+			width: 500px;
+			height: 250px;
+			margin: 15px 20px;
+		}
+		
+		#info {
+			overflow: auto;
+			margin: 0px 20px;
+		}
+	
+	</style>
+	<script type="text/javascript" src="assets/js/swfobject.js"></script>
+	<script type="text/javascript">
+	
+		var flashvars = {
+			testData: "Data passed via flash embed."
+		};
+		var params = {
+			menu: "false",
+			scale: "noscale"
+		};
+		var attributes = {};
+	
+		swfobject.embedSWF("${TM_NEW_FILE_BASENAME}.swf", "flashcontent", "500", "250", "9.0.0", "assets/swf/expressInstall.swf", flashvars, params, attributes);
+		</script>
+</head>
+<body>
+
+	<div id="wrap" >
+
+		<div id="flashcontent">
+			<h1>Alternative content</h1>
+			<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		</div>
+
+		<div id="info">
+			<h1>${TM_NEW_FILE_BASENAME}</h1>
+			<h2>A few notes about this file:</h2>
+			<ul class="notes">
+				<li>There is not much to say about this file.</li>
+				<li>If there were to be definition type stuff to say:
+					<dt>Title Here <span class="note">optional note here</span></dt>
+					    <dd>Additional information here.</dd>
+						<dd class="note">Further information here.</dd>
+					
+				</li>
+			</ul>
+			
+			<h2>Change Log:</h2>
+			<h3>Date</h3>
+			<ul class="notes">
+				<li>Item</li>
+				<li>Item</li>
+			</ul>
+		</div>
+	
+	</div>
+	
+</body>
+</html>

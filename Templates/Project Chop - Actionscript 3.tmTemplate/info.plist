@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>"./_create_chop01_as3_project.sh"</string>
+	<key>extension</key>
+	<string>as</string>
+	<key>name</key>
+	<string>Project Chop - Actionscript 3</string>
+	<key>uuid</key>
+	<string>C6BE315E-4358-4659-9625-AF5404DC6F15</string>
+</dict>
+</plist>

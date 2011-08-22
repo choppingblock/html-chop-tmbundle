@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>addEventListener($1, $2, false, 0, true);</string>
+	<key>name</key>
+	<string>addEventListener (adde)</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>adde</string>
+	<key>uuid</key>
+	<string>F8A5857A-AB52-4382-A364-0D783D794C68</string>
+</dict>
+</plist>

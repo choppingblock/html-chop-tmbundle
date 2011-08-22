@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = ENV['TM_SUPPORT_PATH']
+DIALOG = SUPPORT + '/bin/tm_dialog'
+
+require SUPPORT + '/lib/escape'
+require SUPPORT + '/lib/exit_codes'
+require SUPPORT + '/lib/osx/plist'
+
+wrap_char = "-"
+banner_wrapper = "//" + wrap_char * 74
+
+all_banners = [
+
+{ 'title' =&gt; 'Variables, Constants &amp; Bindings', 'data' =&gt; "//  ${1:Variables, Constants &amp; Bindings}" },
+{ 'title' =&gt; 'Constructor', 'data' =&gt; '//  ${1:Constructor}'}, 
+{ 'title' =&gt; 'Accessors', 'data' =&gt; '//  ${1:Accessors}' },
+{ 'title' =&gt; '---' },
+{ 'title' =&gt; 'Init Methods', 'data' =&gt; "//  ${1:Init Methods}" },
+{ 'title' =&gt; 'Create / Destroy Methods', 'data' =&gt; "//  ${1:Create / Destroy Methods}" },
+{ 'title' =&gt; 'Overridden Methods', 'data' =&gt; "//  ${1:Overridden Methods}" },
+{ 'title' =&gt; 'Methods', 'data' =&gt; "//  ${1:Methods}" },
+{ 'title' =&gt; '---' },
+{ 'title' =&gt; 'Event Handlers', 'data' =&gt; '//  ${1:Event Handlers}' },
+{ 'title' =&gt; 'Overridden Event Handlers', 'data' =&gt; '//  ${1:Overridden Event Handlers}' }
+
+]
+
+i_banners = [
+	{ 'title' =&gt; 'Accessors', 'data' =&gt; "//  ${1:Accessors}" },
+	{ 'title' =&gt; 'Methods', 'data' =&gt; '//  ${1:Methods}' }
+]
+
+banners = ENV['TM_SCOPE'] =~ /interface/ ? i_banners : all_banners
+
+plist = { 'menuItems' =&gt; banners }.to_plist
+
+res = OSX::PropertyList::load(`#{e_sh DIALOG} -up #{e_sh plist}`)
+
+TextMate.exit_discard() unless res.has_key? 'selectedMenuItem'
+TextMate.exit_insert_snippet( banner_wrapper + "\n\/\/\n" + res['selectedMenuItem']['data'] + "\n\/\/\n" + banner_wrapper + "$0" )</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Insert Section Banner Major</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>tabTrigger</key>
+	<string>major</string>
+	<key>uuid</key>
+	<string>2D69E73A-E68B-4DF4-BAC6-5F06AD2E779B</string>
+</dict>
+</plist>

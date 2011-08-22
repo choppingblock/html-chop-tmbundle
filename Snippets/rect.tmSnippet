@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var $1:Sprite = new Sprite();
+$1.graphics.beginFill(0x000000);
+$1.graphics.drawRect(0, 0, 10, 10);
+$1.graphics.endFill();
+
+addChild($1);</string>
+	<key>name</key>
+	<string>rect</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>rect</string>
+	<key>uuid</key>
+	<string>3A9FF63D-14FD-4A68-843E-A669EE71F99B</string>
+</dict>
+</plist>
