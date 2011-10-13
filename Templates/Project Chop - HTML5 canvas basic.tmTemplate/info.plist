@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>"./_create_chop05_html_project.sh"</string>
+	<key>extension</key>
+	<string>html</string>
+	<key>name</key>
+	<string>Project Chop - HTML5 canvas basic</string>
+	<key>uuid</key>
+	<string>A6CC9C48-9AA8-49C5-9F12-155BA9321672</string>
+</dict>
+</plist>
