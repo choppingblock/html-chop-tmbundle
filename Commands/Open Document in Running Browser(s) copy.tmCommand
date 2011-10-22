@@ -59,7 +59,7 @@ end</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html, source.js</string>
 	<key>uuid</key>
 	<string>E3A955A5-C9A5-4DC9-AAA9-C5A3A159A26C</string>
 </dict>

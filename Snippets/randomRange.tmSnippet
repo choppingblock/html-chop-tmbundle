@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// returns a random number between the two limits provided 
+function randomRange(min, max)
+{
+	return ((Math.random()*(max-min)) + min); 
+}</string>
+	<key>name</key>
+	<string>randomRange</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>randomRange</string>
+	<key>uuid</key>
+	<string>A00A14AD-F75C-465A-8B2B-C84851001B24</string>
+</dict>
+</plist>

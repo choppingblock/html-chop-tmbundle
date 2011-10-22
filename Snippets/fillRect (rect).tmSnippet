@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:c}.fillStyle = '${2:#f60}';
+//${1:c}.fillStyle = "rgb(255,255,255)";
+//${1:c}.fillStyle = "rgba(255,255,255,0.5)";
+//${1:c}.fillStyle = "hsla(30, 100%, 80%, 0.5)";
+${1:c}.strokeStyle = '${3:#fff}';
+${1:c}.lineWidth = ${4:1}; 
+${1:c}.fillRect(${5:0},${6:0},${7:50},${8:50});
+</string>
+	<key>name</key>
+	<string>fillRect (rect)</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>rect</string>
+	<key>uuid</key>
+	<string>8D0E6669-DDFE-4D86-ADE5-483A3A835F25</string>
+</dict>
+</plist>
