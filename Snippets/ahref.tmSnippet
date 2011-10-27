@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;a href="${1:#}"&gt;$2&lt;/a&gt;</string>
+	<string>&lt;a href="${1:#}"${3: onclick="window.open(this.href); return false;"}&gt;$2&lt;/a&gt;</string>
 	<key>name</key>
 	<string>ahref</string>
 	<key>scope</key>
