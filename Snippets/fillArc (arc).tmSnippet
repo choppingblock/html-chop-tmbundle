@@ -13,7 +13,7 @@ ${1:c}.stroke();</string>
 	<key>name</key>
 	<string>fillArc (arc)</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
 	<string>arc</string>
 	<key>uuid</key>

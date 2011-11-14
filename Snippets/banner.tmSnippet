@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>banner</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
 	<string>banner</string>
 	<key>uuid</key>

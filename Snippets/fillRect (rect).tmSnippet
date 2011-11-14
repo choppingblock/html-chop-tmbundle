@@ -14,7 +14,7 @@ ${1:c}.fillRect(${5:0},${6:0},${7:50},${8:50});
 	<key>name</key>
 	<string>fillRect (rect)</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
 	<string>rect</string>
 	<key>uuid</key>

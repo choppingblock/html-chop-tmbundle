@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>addEventListener (adde)</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
 	<string>adde</string>
 	<key>uuid</key>

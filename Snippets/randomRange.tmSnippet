@@ -11,7 +11,7 @@ function randomRange(min, max)
 	<key>name</key>
 	<string>randomRange</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
 	<string>randomRange</string>
 	<key>uuid</key>
