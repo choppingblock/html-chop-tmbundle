@@ -25,19 +25,12 @@ if [ -n "$fullProjectPath" ]; then
 	projectPath=`dirname "$fullProjectPath"`;
 
 	#Create our project directory structure.
-	#mkdir -p "$projectPath/$projectName/assets/css";
 	mkdir -p "$projectPath/$projectName/images";	
-	#mkdir -p "$projectPath/$projectName/assets/js";
-	#mkdir -p "$projectPath/$projectName/assets/swf";
-	#mkdir -p "$projectPath/$projectName/assets/xml";	
 	
-	# this recursively creates all source code folders, creating any missing directories along the way
-	# mkdir -p "$classPathDirectory/ui";
 	
 	#Gather variables to be substituted.
 	TM_NEW_FILE_BASENAME="$projectName";
 	
-	# export TM_NEW_FILE_URI="$projectPath/$projectName/src/$projectName.fla";
 	export TM_YEAR=`date "+%Y"`;
 	export TM_DATE=`date "+%d.%m.%Y"`;
 	
@@ -52,7 +45,13 @@ if [ -n "$fullProjectPath" ]; then
 	#cp "ie_lt8_fixes.css" "$projectPath/$projectName/assets/css/ie_lt8_fixes.css";
 	#cp "print.css" "$projectPath/$projectName/assets/css/print.css";
 	cp "styles.css" "$projectPath/$projectName/styles.css";
-		
+	
+
+	cd "$projectPath/$projectName/";
+	git init;
+	git add *;
+	git commit -m "Initial project version";
+	
 	# Open the project in TextMate
 	open -a "TextMate.app" "$projectPath/$projectName/$projectName.tmproj";
 		
