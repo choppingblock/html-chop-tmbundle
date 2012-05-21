@@ -62,8 +62,8 @@ if [ -n "$fullProjectPath" ]; then
 	cp "favicon.ico" "$projectPath/$projectName/favicon.ico";
 	cp "humans.txt" "$projectPath/$projectName/humans.txt";
 	cp "dd_belatedpng.js" "$projectPath/$projectName/assets/js/libs/dd_belatedpng.js";
-	cp "jquery-1.5.1.js" "$projectPath/$projectName/assets/js/libs/jquery-1.5.1.js";
-	cp "modernizr-1.7.min.js" "$projectPath/$projectName/assets/js/libs/modernizr-1.7.min.js";
+	cp "jquery-1.5.1.js" "$projectPath/$projectName/assets/js/libs/jquery-1.7.2.min.js";
+	cp "modernizr-1.7.min.js" "$projectPath/$projectName/assets/js/libs/modernizr-2.5.3.js";
 	cp "plugins.js" "$projectPath/$projectName/assets/js/plugins.js";
 	cp "script.js" "$projectPath/$projectName/assets/js/script.js";
 	cp "robots.txt" "$projectPath/$projectName/robots.txt";
