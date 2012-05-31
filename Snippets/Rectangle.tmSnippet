@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>//Rectangle
+${1:c}.beginPath();  
+${1:c}.rect(${2:x},${3:y},${4:width},${5:height});  
+${1:c}.fill(); 
+${1:c}.closePath();  
+${1:c}.stroke(); </string>
+	<key>name</key>
+	<string>Rectangle</string>
+	<key>scope</key>
+	<string>text.html, source.js</string>
+	<key>tabTrigger</key>
+	<string>rect</string>
+	<key>uuid</key>
+	<string>E87F8748-5D51-4AF6-ACDD-77CF06094D04</string>
+</dict>
+</plist>

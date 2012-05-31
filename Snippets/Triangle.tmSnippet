@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:c}.beginPath();  
+${1:c}.moveTo(25,25);  
+${1:c}.lineTo(105,25);  
+${1:c}.lineTo(25,105);  
+${1:c}.fill(); 
+${1:c}.closePath();  
+${1:c}.stroke(); 
+</string>
+	<key>name</key>
+	<string>Triangle</string>
+	<key>scope</key>
+	<string>text.html, source.js</string>
+	<key>tabTrigger</key>
+	<string>triangle</string>
+	<key>uuid</key>
+	<string>5E968D75-5266-4C62-8788-8E0313ADD8CE</string>
+</dict>
+</plist>
