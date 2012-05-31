@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>function setupCanvas() {
+	
+	canvas = document.createElement( 'canvas' );
+	c = canvas.getContext( '2d' );
+	canvas.width = SCREEN_WIDTH; 
+	canvas.height = SCREEN_HEIGHT; 
+	document.body.appendChild( canvas );
+
+}</string>
+	<key>name</key>
+	<string>setupCanvas Function</string>
+	<key>scope</key>
+	<string>text.html, source.js</string>
+	<key>tabTrigger</key>
+	<string>setupcanvas</string>
+	<key>uuid</key>
+	<string>B13ECFCE-9F13-41C7-98BF-027D40F8A908</string>
+</dict>
+</plist>

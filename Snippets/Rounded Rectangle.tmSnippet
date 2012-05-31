@@ -4,34 +4,25 @@
 <dict>
 	<key>content</key>
 	<string>//Rounded Rectangle
+var x = ${1:200};
+var y = ${2:200};
+var height = ${3:100};
+var width = ${4:100};
+var roundedradius = ${5:10};
 
-var x = 0;
-var y = 0;
-var height = 10;
-var width = 10;
-var roundedradius = 10;
-
-${1:c}.arc(${2:x},${3:y},${4:radius},0,2*Math.PI,false);  
-
-${1:c}.beginPath(); 
-
-${1:c}.moveto(x+roundedradius, y);
-
-${1:c}.lineto(x+width-(2*roundedradius), y);
-
-${1:c}.arcto(x+width-(2*roundedradius), y, roundedradius, Math.PI/2, 0, true);
-
-//lineto
-
-//arcto
-
-//lineto
-
-//arcto
-
-${1:c}.fill(); 
-${1:c}.closePath();  
-${1:c}.stroke(); </string>
+${6:c}.beginPath(); 
+${6:c}.moveTo(x+roundedradius, y);
+${6:c}.lineTo(x+width-roundedradius, y);
+${6:c}.arc(x+width-roundedradius, y+roundedradius, roundedradius, 2*Math.PI-Math.PI/2,0, false);
+${6:c}.lineTo(x+width, y+height-roundedradius);
+${6:c}.arc(x+width-roundedradius, y+height-roundedradius, roundedradius, 0,Math.PI/2, false);
+${6:c}.lineTo(x+roundedradius, y+height);
+${6:c}.arc(x+roundedradius, y+height-roundedradius, roundedradius, Math.PI/2,Math.PI, false);			
+${6:c}.lineTo(x, y+roundedradius);			
+${6:c}.arc(x+roundedradius, y+roundedradius, roundedradius, Math.PI, 2*Math.PI-Math.PI/2, false);
+${6:c}.fill(); 
+${6:c}.closePath();  
+${6:c}.stroke(); </string>
 	<key>name</key>
 	<string>Rounded Rectangle</string>
 	<key>scope</key>

@@ -3,7 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:c}.beginPath();  
+	<string>//Triangle
+${1:c}.beginPath();  
 ${1:c}.moveTo(25,25);  
 ${1:c}.lineTo(105,25);  
 ${1:c}.lineTo(25,105);  

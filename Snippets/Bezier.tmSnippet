@@ -3,23 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Syntax Summary:
-
-   Variables        $TM_FILENAME, $TM_SELECTED_TEXT
-   Fallback Values  ${TM_SELECTED_TEXT:$TM_CURRENT_WORD}
-   Substitutions    ${TM_FILENAME/.*/\U$0/}
-   
-   Tab Stops        $1, $2, $3, … $0 (optional)
-   Placeholders     ${1:default value}
-   Mirrors          &lt;${2:tag}&gt;…&lt;/$2&gt;
-   Transformations  &lt;${3:tag}&gt;…&lt;/${3/(\w*).*/\U$1/}&gt;
-
-   Shell Code       `date`, `pwd`
-
-   Escape Codes     \$ \` \\
-</string>
+	<string>//Bezier Curve
+${1:c}.bezierCurveTo(${2:controlpoint1_x}, ${3:controlpoint1_y},${4:controlpoint2_x}, ${5:controlpoint2_y}, ${6:x}, ${7:y});</string>
 	<key>name</key>
 	<string>Bezier</string>
+	<key>scope</key>
+	<string>text.html, source.js</string>
+	<key>tabTrigger</key>
+	<string>bezier</string>
 	<key>uuid</key>
 	<string>F91F8CCF-2E15-46D8-BE27-B562522A3085</string>
 </dict>
