@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:c}.save();
+$2
+${1:c}.restore();</string>
+	<key>name</key>
+	<string>Save/Restore</string>
+	<key>scope</key>
+	<string>text.html, source.js</string>
+	<key>tabTrigger</key>
+	<string>save</string>
+	<key>uuid</key>
+	<string>1B55A814-B3CF-4F44-8CF1-5EF3F65045CD</string>
+</dict>
+</plist>

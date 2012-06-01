@@ -11,7 +11,7 @@ ${1:c}.arc(${2:0}, ${3:0}, ${4:5}, 0, Math.PI*2, true);
 ${1:c}.fill(); 
 ${1:c}.stroke();</string>
 	<key>name</key>
-	<string>fillArc (arc)</string>
+	<string>Arc</string>
 	<key>scope</key>
 	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
