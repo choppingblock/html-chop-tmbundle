@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>//Rounded Rectangle
+var x = ${1:200};
+var y = ${2:200};
+var height = ${3:100};
+var width = ${4:100};
+var roundedradius = ${5:10};
+
+${6:c}.beginPath(); 
+${6:c}.moveTo(x+roundedradius, y);
+${6:c}.lineTo(x+width-roundedradius, y);
+${6:c}.arc(x+width-roundedradius, y+roundedradius, roundedradius, 2*Math.PI-Math.PI/2,0, false);
+${6:c}.lineTo(x+width, y+height-roundedradius);
+${6:c}.arc(x+width-roundedradius, y+height-roundedradius, roundedradius, 0,Math.PI/2, false);
+${6:c}.lineTo(x+roundedradius, y+height);
+${6:c}.arc(x+roundedradius, y+height-roundedradius, roundedradius, Math.PI/2,Math.PI, false);			
+${6:c}.lineTo(x, y+roundedradius);			
+${6:c}.arc(x+roundedradius, y+roundedradius, roundedradius, Math.PI, 2*Math.PI-Math.PI/2, false);
+${6:c}.fill(); 
+${6:c}.closePath();  
+${6:c}.stroke(); </string>
+	<key>name</key>
+	<string>Rounded Rectangle</string>
+	<key>scope</key>
+	<string>text.html, source.js</string>
+	<key>tabTrigger</key>
+	<string>roundrect</string>
+	<key>uuid</key>
+	<string>CD701A75-D5DE-4804-BA20-E59520BE8E42</string>
+</dict>
+</plist>

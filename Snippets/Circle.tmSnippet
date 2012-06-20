@@ -3,20 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:c}.fillStyle = "rgb(0,255,0)"; 
-${1:c}.strokeStyle = "rgb(255,255,255)"; 
-${1:c}.lineWidth = 2; 
-${1:c}.beginPath();
-${1:c}.arc(${2:0}, ${3:0}, ${4:5}, 0, Math.PI*2, true); 
+	<string>//Circle
+${1:c}.beginPath();  
+${1:c}.arc(${2:x},${3:y},${4:radius},0,2*Math.PI,false);  
 ${1:c}.fill(); 
-${1:c}.stroke();</string>
+${1:c}.closePath();  
+${1:c}.stroke(); </string>
 	<key>name</key>
-	<string>Arc</string>
+	<string>Circle</string>
 	<key>scope</key>
 	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
-	<string>arc</string>
+	<string>circle</string>
 	<key>uuid</key>
-	<string>724B22EA-708C-4DC1-B9CF-A14FCB76A06C</string>
+	<string>29F0B91B-C920-4509-9CBB-E8F7938D8BED</string>
 </dict>
 </plist>
