@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>//Hex
-//${1:c}.fillStyle = "#000";
-//RGB
-//${1:c}.fillStyle = "rgb(0,0,0)";
-//RGBA
-//${1:c}.fillStyle = "rgba(0,0,0,1)";
-${1:c}.fillStyle = "black";</string>
+	<string>//Fill
+//${1:c}.fillStyle = "orange";
+${1:c}.fillStyle = "${2:#ff6600}";
+//${1:c}.fillStyle = "rgb(255, 165, 0)";
+//${1:c}.fillStyle = "rgba(255, 165, 0, 0.5)";
+//${1:c}.fillStyle = "hsl(255, 100%, 50%)";
+//${1:c}.fillStyle = "hsla(255, 100%, 50%, 0.5)";</string>
 	<key>name</key>
 	<string>fillStyle</string>
 	<key>scope</key>
