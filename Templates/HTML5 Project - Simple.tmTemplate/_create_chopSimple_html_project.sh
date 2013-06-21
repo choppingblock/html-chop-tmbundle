@@ -2,14 +2,16 @@
 
 #-------------------------------------------------------------------------
 #
-# New HTML Project 
-# Version 1
+# New Simple HTML Project 
+# Version 0.1
+# Created: June 20, 2013
+# Creator: Matthew Richmond
 #
 # Initial build of HTML project.
 #
 #-------------------------------------------------------------------------
 
-defaultProjectName="HTML5BasicProject.tmproj";
+defaultProjectName="HTML5SimpleProject.tmproj";
 defaultClassPath="org.domain";
 
 fullProjectPath=$(CocoaDialog filesave \
@@ -25,11 +27,7 @@ if [ -n "$fullProjectPath" ]; then
 	projectPath=`dirname "$fullProjectPath"`;
 
 	#Create our project directory structure.
-	#mkdir -p "$projectPath/$projectName/assets/css";
-	mkdir -p "$projectPath/$projectName/images";	
-	#mkdir -p "$projectPath/$projectName/assets/js";
-	#mkdir -p "$projectPath/$projectName/assets/swf";
-	#mkdir -p "$projectPath/$projectName/assets/xml";	
+	mkdir -p "$projectPath/$projectName/images";		
 	
 	# this recursively creates all source code folders, creating any missing directories along the way
 	# mkdir -p "$classPathDirectory/ui";
@@ -49,8 +47,6 @@ if [ -n "$fullProjectPath" ]; then
 	# cp "$projectPath/$projectName/deploy/index.html" "$projectPath/$projectName/deploy/$projectName.html";
 	
 	#Copy static files.
-	#cp "ie_lt8_fixes.css" "$projectPath/$projectName/assets/css/ie_lt8_fixes.css";
-	#cp "print.css" "$projectPath/$projectName/assets/css/print.css";
 	cp "styles.css" "$projectPath/$projectName/styles.css";
 		
 	# Open the project in TextMate

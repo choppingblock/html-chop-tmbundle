@@ -2,14 +2,16 @@
 
 #-------------------------------------------------------------------------
 #
-# New HTML Project 
-# Version 1
+# New Basic jQuery HTML Project 
+# Version 0.1
+# Created: June 20, 2013
+# Creator: Matthew Richmond
 #
 # Initial build of HTML project.
 #
 #-------------------------------------------------------------------------
 
-defaultProjectName="HTMLProject.tmproj";
+defaultProjectName="HTML5Basic_jQueryCanvasProject.tmproj";
 defaultClassPath="org.domain";
 
 fullProjectPath=$(CocoaDialog filesave \
@@ -25,11 +27,11 @@ if [ -n "$fullProjectPath" ]; then
 	projectPath=`dirname "$fullProjectPath"`;
 
 	#Create our project directory structure.
-	#mkdir -p "$projectPath/$projectName/assets/css";
-	mkdir -p "$projectPath/$projectName/images";	
-	#mkdir -p "$projectPath/$projectName/assets/js";
-	#mkdir -p "$projectPath/$projectName/assets/swf";
-	#mkdir -p "$projectPath/$projectName/assets/xml";	
+	mkdir -p "$projectPath/$projectName/assets";
+	mkdir -p "$projectPath/$projectName/assets/css";
+	mkdir -p "$projectPath/$projectName/assets/images";
+	mkdir -p "$projectPath/$projectName/assets/js";
+	mkdir -p "$projectPath/$projectName/assets/fonts";
 	
 	# this recursively creates all source code folders, creating any missing directories along the way
 	# mkdir -p "$classPathDirectory/ui";
@@ -39,7 +41,8 @@ if [ -n "$fullProjectPath" ]; then
 	
 	# export TM_NEW_FILE_URI="$projectPath/$projectName/src/$projectName.fla";
 	export TM_YEAR=`date "+%Y"`;
-	export TM_DATE=`date "+%d.%m.%Y"`;
+	export TM_DATE=`date "+%B %d, %Y"`;
+	export TM_TIME=`date "+%l:%M %p"`;
 	
 	# Customise file variables for the new project and rename files to match the project name
 	perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' < "Project.tmproj.xml" > "$projectPath/$projectName/$projectName.tmproj";
@@ -49,10 +52,14 @@ if [ -n "$fullProjectPath" ]; then
 	# cp "$projectPath/$projectName/deploy/index.html" "$projectPath/$projectName/deploy/$projectName.html";
 	
 	#Copy static files.
-	#cp "ie_lt8_fixes.css" "$projectPath/$projectName/assets/css/ie_lt8_fixes.css";
-	#cp "print.css" "$projectPath/$projectName/assets/css/print.css";
-	cp "styles.css" "$projectPath/$projectName/styles.css";
-		
+	cp "styles.css" "$projectPath/$projectName/assets/css/styles.css";
+	cp "jquery-1.10.1.min.js" "$projectPath/$projectName/assets/js/jquery-1.10.1.min.js";
+	cp "Lato-Bold.ttf" "$projectPath/$projectName/assets/fonts/Lato-Bold.ttf";
+	cp "Lato-OFL.txt" "$projectPath/$projectName/assets/fonts/Lato-OFL.txt";
+	cp "Merriweather-Black.ttf" "$projectPath/$projectName/assets/fonts/Merriweather-Black.ttf";
+	cp "Merriweather-OFL.txt" "$projectPath/$projectName/assets/fonts/Merriweather-OFL.txt";
+	cp "Merriweather-Regular.ttf" "$projectPath/$projectName/assets/fonts/Merriweather-Regular.ttf";
+	
 	# Open the project in TextMate
 	open -a "TextMate.app" "$projectPath/$projectName/$projectName.tmproj";
 		

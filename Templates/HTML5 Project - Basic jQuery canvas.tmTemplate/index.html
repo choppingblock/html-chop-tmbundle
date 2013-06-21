@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- The title of your page, and the bookmark title -->
+    <title>${TM_NEW_FILE_BASENAME}</title>
+	<!-- If your site is responsive, you will want this  -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="author" content="The Chopping Block, Inc." />
+	<meta name="geo.country" content="US" />
+	<meta name="dc.language" content="en" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" media="screen" charset="utf-8" />
+	
+	<style type="text/css" media="screen">		
+		/*local styles if any (quick tests and local only overrides)*/
+	</style>
+	
+	<!-- CSS then scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.1.min.js"><\/script>')</script>
+
+	<script type="text/javascript" charset="utf-8">
+		
+		var canvas;
+		var ctx;
+		var w;
+		var h;
+		
+		window.onload = function() {
+		    
+			w = $(".content").width();
+			h = $(".content").height();
+
+			createCanvas();
+			createChildren();
+		}
+		
+		function createCanvas() {
+			
+			// create new canvas
+			canvas = $('<canvas />').attr({
+				id: "canvas",
+				width: w,
+				height: h
+			});			
+			ctx = canvas[0].getContext('2d');
+			
+			// append it
+			$(".content").append( canvas );
+			
+		}
+		
+		function createChildren() {
+			
+			// switch to multiply blending
+			//ctx.globalCompositeOperation = 'lighter';
+			
+			var count = randomRange(4, 8);
+			for ( var i=0; i<count; i++ ) {
+				
+				var posX = randomRange(0, w);
+				var posY = randomRange(0, h);
+				var scale = randomRange(1, 3);
+				var color = "hsla(" + ((360/count) * i) + ", 100%, 50%, 0.5)";
+				
+				drawSquare( posX, posY, scale, color );			
+			};
+			
+		}
+		
+		function drawSquare(x, y, s, c) {
+			
+			// save the current canvas state
+			ctx.save(); 
+
+			// move to where the particle should be
+			ctx.translate(x, y);
+
+			// move the draw position to the center of the image
+			ctx.translate(0, 0);
+			ctx.scale(s, s);
+
+			// draw it
+			ctx.beginPath();
+			ctx.arc(0, 0, 100, 0, 2 * Math.PI, false);
+			ctx.closePath();
+			ctx.fillStyle = c;
+			ctx.fill();
+
+			// and restore the canvas state
+			ctx.restore();
+			
+		}
+		
+		// returns a random number between the two limits provided 
+		function randomRange(min, max)
+		{
+			return ((Math.random()*(max-min)) + min); 
+		}
+		
+	</script>
+</head>
+<body>
+
+	<div class="wrap" >
+		
+		<header>
+			<h1>${TM_NEW_FILE_BASENAME}</h1>
+			<h2>Nice work! You just created a basic jQuery html project.</h2>
+		</header>
+		
+		<div class="content"></div>
+		
+		<div class="info">
+
+			<h2>A few notes about this file:</h2>
+			<ul class="notes">
+				<li>There is not much to say about this file.</li>
+				<li>If there were to be definition type stuff to say:
+					<dt>Title Here <span class="note">optional note here</span></dt>
+					    <dd>Additional information here.</dd>
+						<dd class="note">Further information here.</dd>
+					
+				</li>
+			</ul>
+			
+			<h2>Change Log:</h2>
+			<h3>${TM_DATE} - ${TM_TIME}</h3>
+			<ul class="notes">
+				<li>Initial creation of project files.</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

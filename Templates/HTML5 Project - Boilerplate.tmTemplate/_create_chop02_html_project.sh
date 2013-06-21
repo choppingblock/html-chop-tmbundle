@@ -9,7 +9,7 @@
 #
 #-------------------------------------------------------------------------
 
-defaultProjectName="HTML5Project.tmproj";
+defaultProjectName="HTML5BoilerplateProject.tmproj";
 defaultClassPath="org.domain";
 
 fullProjectPath=$(CocoaDialog filesave \

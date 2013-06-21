@@ -2,14 +2,16 @@
 
 #-------------------------------------------------------------------------
 #
-# New HTML Project 
-# Version 1
+# New Basic jQuery HTML Project 
+# Version 0.1
+# Created: June 20, 2013
+# Creator: Matthew Richmond
 #
 # Initial build of HTML project.
 #
 #-------------------------------------------------------------------------
 
-defaultProjectName="HTMLProject.tmproj";
+defaultProjectName="HTML5Basic_jQueryProject.tmproj";
 defaultClassPath="org.domain";
 
 fullProjectPath=$(CocoaDialog filesave \
@@ -25,11 +27,10 @@ if [ -n "$fullProjectPath" ]; then
 	projectPath=`dirname "$fullProjectPath"`;
 
 	#Create our project directory structure.
+	mkdir -p "$projectPath/$projectName/assets";
 	mkdir -p "$projectPath/$projectName/assets/css";
 	mkdir -p "$projectPath/$projectName/assets/images";	
-	mkdir -p "$projectPath/$projectName/assets/js";
-	mkdir -p "$projectPath/$projectName/assets/swf";
-	mkdir -p "$projectPath/$projectName/assets/xml";	
+	mkdir -p "$projectPath/$projectName/assets/js";	
 	
 	# this recursively creates all source code folders, creating any missing directories along the way
 	# mkdir -p "$classPathDirectory/ui";
@@ -44,15 +45,13 @@ if [ -n "$fullProjectPath" ]; then
 	# Customise file variables for the new project and rename files to match the project name
 	perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' < "Project.tmproj.xml" > "$projectPath/$projectName/$projectName.tmproj";
 	perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' < "index.html" > "$projectPath/$projectName/index.html";
-	perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' < "project.xml" > "$projectPath/$projectName/assets/xml/projectData.xml";
 	
 	# cp for run project command compatibility
 	# cp "$projectPath/$projectName/deploy/index.html" "$projectPath/$projectName/deploy/$projectName.html";
 	
 	#Copy static files.
-	cp "ie_lt8_fixes.css" "$projectPath/$projectName/assets/css/ie_lt8_fixes.css";
-	cp "print.css" "$projectPath/$projectName/assets/css/print.css";
 	cp "styles.css" "$projectPath/$projectName/assets/css/styles.css";
+	cp "jquery-1.10.1.min.js" "$projectPath/$projectName/assets/js/jquery-1.10.1.min.js";
 		
 	# Open the project in TextMate
 	open -a "TextMate.app" "$projectPath/$projectName/$projectName.tmproj";

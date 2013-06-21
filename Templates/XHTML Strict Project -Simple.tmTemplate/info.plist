@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>command</key>
-	<string>"./_create_chop02_html_project.sh"</string>
+	<string>"./_create_chop03_html_project.sh"</string>
 	<key>extension</key>
 	<string>html</string>
 	<key>name</key>
-	<string>Project Chop - HTML5</string>
+	<string>XHTML Strict Project - Simple</string>
 	<key>uuid</key>
-	<string>E829F0CD-81FB-4307-96E9-7F46E83517AD</string>
+	<string>9C6A13DA-474F-4619-AEAE-E988584CD234</string>
 </dict>
 </plist>

@@ -9,7 +9,7 @@
 #
 #-------------------------------------------------------------------------
 
-defaultProjectName="HTML5CanvasBasicProject.tmproj";
+defaultProjectName="XHTMLSimpleProject.tmproj";
 defaultClassPath="org.domain";
 
 fullProjectPath=$(CocoaDialog filesave \
