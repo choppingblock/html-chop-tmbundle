@@ -21,7 +21,42 @@
 		/*local styles if any (quick tests and local only overrides)*/
 	</style>
 	
-	<!-- CSS then scripts -->
+</head>
+<body>
+
+	<div class="wrap" >
+		
+		<header>
+			<h1>${TM_NEW_FILE_BASENAME}</h1>
+			<h2>Nice work! You just created a basic jQuery html project.</h2>
+		</header>
+		
+		<div class="content"></div>
+		
+		<div class="info">
+
+			<h2>A few notes about this file:</h2>
+			<ul class="notes">
+				<li>There is not much to say about this file.</li>
+				<li>If there were to be definition type stuff to say:
+					<dt>Title Here <span class="note">optional note here</span></dt>
+					    <dd>Additional information here.</dd>
+						<dd class="note">Further information here.</dd>
+					
+				</li>
+			</ul>
+			
+			<h2>Change Log:</h2>
+			<h3>${TM_DATE} - ${TM_TIME}</h3>
+			<ul class="notes">
+				<li>Initial creation of project files.</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	<!-- Best practice is to keep the script at the bottom of the body -->
+	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.1.min.js"><\/script>')</script>
 
@@ -29,17 +64,12 @@
 		
 		var canvas;
 		var ctx;
-		var w;
-		var h;
+		var w = $(".content").width();
+		var h = $(".content").height();
 		
-		window.onload = function() {
-		    
-			w = $(".content").width();
-			h = $(".content").height();
-
-			createCanvas();
-			createChildren();
-		}
+		// Init stuff
+		createCanvas();
+		createChildren();
 		
 		function createCanvas() {
 			
@@ -105,39 +135,6 @@
 		}
 		
 	</script>
-</head>
-<body>
-
-	<div class="wrap" >
-		
-		<header>
-			<h1>${TM_NEW_FILE_BASENAME}</h1>
-			<h2>Nice work! You just created a basic jQuery html project.</h2>
-		</header>
-		
-		<div class="content"></div>
-		
-		<div class="info">
-
-			<h2>A few notes about this file:</h2>
-			<ul class="notes">
-				<li>There is not much to say about this file.</li>
-				<li>If there were to be definition type stuff to say:
-					<dt>Title Here <span class="note">optional note here</span></dt>
-					    <dd>Additional information here.</dd>
-						<dd class="note">Further information here.</dd>
-					
-				</li>
-			</ul>
-			
-			<h2>Change Log:</h2>
-			<h3>${TM_DATE} - ${TM_TIME}</h3>
-			<ul class="notes">
-				<li>Initial creation of project files.</li>
-			</ul>
-		</div>
-		
-	</div>
 	
 </body>
 </html>
