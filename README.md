@@ -1,21 +1,24 @@
-# Chopping Block TextMate Bundle for HTML Development
+Chopping Block HTML TextMate Bundle
+===================================
 
 To download and install the zipped files:
+_________________________________________
 
-	# Download the files using the *ZIP* button above.
-	## If possible you might have to tell your browser to NOT automatically unzip your downloads, you want the zipped archive.
-	# Rename the downloaded file (html-chop-tmbundle-master.zip) to be html-chop.tmbundle
-	# Install TextMate <http://macromates.com>
-	# If you opened it: Close TextMate
-	# Locate the "Application Support" folder
-	## [hard drive]:Users:[username]:Library:Application Support
-	## if you need help getting to the Library folder, hit Shift-Command-G and enter "~/Library"
-	# If you do not already have a TextMate folder there, make one.
-	# If you do not already have a Bundles folder inside the TextMate folder, make one.
-	# Open TextMate, you should now have the "HTML Chop" bundle installed. You can fid it at: File > New From Template > HTML Chop
+	* Download the files using the *ZIP* button above.
+	** If possible you might have to tell your browser to NOT automatically unzip your downloads, you want the zipped archive.
+	* Rename the downloaded file (html-chop-tmbundle-master.zip) to be html-chop.tmbundle
+	* Install TextMate <http://macromates.com>
+	* If you opened it: Close TextMate
+	* Locate the "Application Support" folder
+	** [hard drive]:Users:[username]:Library:Application Support
+	** if you need help getting to the Library folder, hit Shift-Command-G and enter "~/Library"
+	* If you do not already have a TextMate folder there, make one.
+	* If you do not already have a Bundles folder inside the TextMate folder, make one.
+	* Open TextMate, you should now have the "HTML Chop" bundle installed. You can fid it at: File > New From Template > HTML Chop
 	
 
 To install with Git:
+____________________
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
@@ -24,6 +27,7 @@ To install with Git:
 
 
 To install without Git:
+_______________________
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
