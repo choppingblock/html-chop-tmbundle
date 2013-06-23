@@ -1,5 +1,11 @@
 # Chopping Block TextMate Bundle for HTML Development
 
+To download and install the zipped files:
+
+	# Download the files using the *ZIP* button above.
+
+
+
 To install with Git:
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
