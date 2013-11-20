@@ -4,9 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>console.log('$1 is: '+$1);
-console.dir($1);
-
-</string>
+console.dir($1);</string>
 	<key>name</key>
 	<string>dir</string>
 	<key>scope</key>

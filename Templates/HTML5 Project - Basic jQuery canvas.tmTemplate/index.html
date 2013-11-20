@@ -99,12 +99,12 @@
 				var scale = randomRange(1, 3);
 				var color = "hsla(" + ((360/count) * i) + ", 100%, 50%, 0.5)";
 				
-				drawSquare( posX, posY, scale, color );			
+				drawCircle( posX, posY, scale, color );			
 			};
 			
 		}
 		
-		function drawSquare(x, y, s, c) {
+		function drawCircle(x, y, s, c) {
 			
 			// save the current canvas state
 			ctx.save(); 

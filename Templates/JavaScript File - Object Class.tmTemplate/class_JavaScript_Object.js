@@ -12,11 +12,9 @@
 function ${TM_NEW_FILE_BASENAME}( color, posx, posy, scale ) {
 	/** @lends MyClass# */
 	
-	//--------------------------------------------------------------------------
-	//
- 	//  Variables, Constants & Bindings
-	//
-	//--------------------------------------------------------------------------
+	//----------------------------------
+	//  Variables, Constants & Bindings
+	//----------------------------------
 	
     this.color = color;
 	
@@ -39,86 +37,81 @@ function ${TM_NEW_FILE_BASENAME}( color, posx, posy, scale ) {
 	// add this to the yVel every frame to simulate gravity
 	// this.gravity = 0;
 
-	//--------------------------------------------------------------------------
-    //
-    //  Init Methods
-    //
-    //--------------------------------------------------------------------------
-
-	//--------------------------------------------------------------------------
-    //
-    //  Create / Destroy Methods
-    //
-    //--------------------------------------------------------------------------
-
-	//--------------------------------------------------------------------------
-    //
-    //  Methods
-    //
-    //--------------------------------------------------------------------------
-
-	/**
-	 * Updates any calculations or properties required for draw.
-	 * @param {Object} canvas where this object exists.
-	 * @returns Null
-	 */
-	
-	this.update = function(canvas) {
-	
-		// simulate drag
-		// this.velX *= this.drag; 
-		// this.velY *= this.drag;
-		
-		// add gravity force to the y velocity 
-		// this.velY += this.gravity; 
-		
-		// and the velocity to the position
-		// this.posX += this.velX;
-		// this.posY += this.velY;
-		
-	}
-	
-	/**
-	 * Draws the object to the approperate context.
-	 * @param {Object} ctx where this object should draw.
-	 * @returns Null
-	 */
-	
-	this.render = function(ctx) {
-	
-		// save the current canvas state
-		ctx.save(); 
-		
-		// move to where the particle should be
-		ctx.translate(this.posX, this.posY);
-	
-		// move the draw position to the center of the image
-		ctx.translate(0, 0);
-		ctx.scale(this.scale, this.scale);
-		
-		// draw it
-		ctx.strokeStyle = this.color;
-		ctx.moveTo(-10, 0);
-		ctx.lineTo(10, 0);
-		ctx.moveTo(0, -10);
-		ctx.lineTo(0, 10);
-		ctx.stroke();
-		
-		// and restore the canvas state
-		ctx.restore();
-	
-	}
-	
-	// returns a random number between the two limits provided 
-	function randomRange(min, max)
-	{
-		return ((Math.random()*(max-min)) + min); 
-	}
-	
-	//--------------------------------------------------------------------------
-    //
-    //  Event Handlers
-    //
-    //--------------------------------------------------------------------------
-	
 }
+
+//--------------------------------------------------------------------------
+//
+//  Create / Destroy Methods
+//
+//--------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------
+//
+//  Methods
+//
+//--------------------------------------------------------------------------
+
+/**
+* Updates any calculations or properties required for draw.
+* @param {Object} canvas where this object exists.
+* @returns Null
+*/
+
+${TM_NEW_FILE_BASENAME}.prototype.update = function(canvas) {
+
+	// simulate drag
+	// this.velX *= this.drag; 
+	// this.velY *= this.drag;
+
+	// add gravity force to the y velocity 
+	// this.velY += this.gravity; 
+
+	// and the velocity to the position
+	// this.posX += this.velX;
+	// this.posY += this.velY;
+
+}
+
+/**
+* Draws the object to the approperate context.
+* @param {Object} ctx where this object should draw.
+* @returns Null
+*/
+
+${TM_NEW_FILE_BASENAME}.prototype.render = function(ctx) {
+
+	// save the current canvas state
+	ctx.save(); 
+
+	// move to where the particle should be
+	ctx.translate(this.posX, this.posY);
+
+	// move the draw position to the center of the image
+	ctx.translate(0, 0);
+	ctx.scale(this.scale, this.scale);
+
+	// draw it
+	ctx.strokeStyle = this.color;
+	ctx.moveTo(-10, 0);
+	ctx.lineTo(10, 0);
+	ctx.moveTo(0, -10);
+	ctx.lineTo(0, 10);
+	ctx.stroke();
+
+	// and restore the canvas state
+	ctx.restore();
+
+}
+
+// returns a random number between the two limits provided 
+
+${TM_NEW_FILE_BASENAME}.prototype.randomRange = function(min, max) {
+	return ((Math.random()*(max-min)) + min); 
+}
+
+//--------------------------------------------------------------------------
+//
+//  Event Handlers
+//
+//--------------------------------------------------------------------------
+	

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>console.log('$1 is: '+$1);</string>
+	<string>&lt;img src="${1:http://placehold.it/${5:300}x${6:200}}" class="${3:image}" alt="${4:Placeholder Image}" ${2:width="${5:300}" height="${6:200}"}&gt;</string>
 	<key>name</key>
-	<string>log</string>
+	<string>image</string>
 	<key>scope</key>
 	<string>text.html, source.js</string>
 	<key>tabTrigger</key>
-	<string>log</string>
+	<string>img</string>
 	<key>uuid</key>
-	<string>AC496E3A-8C00-4C5A-8891-7B8631826DED</string>
+	<string>E86EBB4B-BB9F-42B4-8AEB-365D5B9F2400</string>
 </dict>
 </plist>
